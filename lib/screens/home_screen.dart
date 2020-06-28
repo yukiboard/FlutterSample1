@@ -54,10 +54,10 @@ class _HomeScreenState extends State<HomeScreen> {
   _onClick() {
     setState(() {
       var inputText = _textEditingController.text;
-      if(inputText=="") {
+      if (inputText == "") {
         _textHeader = _defaultTextHeader;
         _imageWidget = Container();
-      }else {
+      } else {
         _textHeader = "こんにちわ！$inputTextさん";
         _imageWidget = Image.asset("assets/images/original.png");
       }
